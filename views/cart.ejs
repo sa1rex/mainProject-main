@@ -1,0 +1,69 @@
+<%- include('./partials/head.ejs') %>
+
+    <body>
+
+        <div id="navbar"></div>
+
+        <div id="cartMainDiv">
+
+            <!-- Display Dishes -->
+            <div id="display"></div>
+
+            <!-- Place Order Button & price -->
+            <div id="boxSize">
+                <div class="card ">
+                    <div class="card-header fs-3 fw-bold text-center">
+                        Order Details
+                    </div>
+                    <div class="card-body p-0">
+                        <div id="totalAmount" class="px-4 pt-4"></div>
+                        <div id="couponDiv">
+                            <input type="text" id="couponInput" class="form-control mb-3"
+                                placeholder="Enter Coupon Code" />
+                            <button id="applyCoupon" class="btn btn-outline-success">Apply Coupon</button>
+                        </div>
+
+                        <div class="card-header fs-3 fw-bold text-center">
+                            Shipping Details
+                        </div>
+
+                        <form id="form" method="POST" action="/cart" enctype="multipart/form-data">
+                            <div class="p-4 mt-2">
+                                <input type="hidden" id="itemsField" name="items" value="">
+                                <input type="hidden" id="totalAmountField" name="totalAmount" value="">
+                                <input id="name" name="user_name" class="form-control mb-3" type="text"
+                                    placeholder="Name">
+                                <input id="email" name="user_email" class="form-control mb-3" type="text"
+                                    placeholder="Email">
+                                <input id="mobile" name="user_mobilenumber" class="form-control mb-3" type="text"
+                                    placeholder="Mobile">
+                                <div class="input-group mb-3">
+                                    <input id="street" name="user_street" class="form-control" type="text"
+                                        placeholder="Street">
+                                    <input id="city" name="user_city" class="form-control" type="text"
+                                        placeholder="City">
+                                </div>
+                                <div class="input-group mb-4">
+                                    <input id="state" name="user_state" class="form-control" type="text"
+                                        placeholder="State">
+                                    <input id="pincode" name="user_pincode" class="form-control" type="text"
+                                        placeholder="Pincode">
+
+                                </div>
+                                <div class="d-grid">
+                                    <input type="submit" class="btn btn-success" value="Place Order" />
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Toast Notification div -->
+        <div id="notifyDiv1"></div>
+        <div id="notifyDiv2"></div>
+
+        <%- include('./partials/footer.ejs') %>

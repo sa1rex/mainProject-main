@@ -1,0 +1,91 @@
+/*
+Mild and soft color scheme from 
+https://colorate.azurewebsites.net/Color/007BFF
+using the login button color as the main reference
+
+main #007BFF
+Base #39CEFF
+Accent #72FFFB
+Off white tint #DAECFF
+
+#72FFFB
+*/
+
+body {
+  background-color: #daecff;
+}
+h1 {
+  size: 80px;
+  font-weight: 60;
+}
+h2 {
+  size: 25px;
+  font-weight: 40;
+  margin-top: 10px;
+}
+main > .container {
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  padding: 10px;
+}
+a {
+  color: #daecff;
+}
+
+.side-borders {
+  border-style: solid solid solid solid;
+}
+
+/* Fonts */
+.main-font {
+  font-family: "Noto Sans", sans-serif;
+}
+.main-italic {
+  font-family: "Noto Sans", sans-serif;
+  font-style: italic;
+}
+.main-bold {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
+}
+
+/* Navbar classes */
+.nav-link {
+  /* color: #D2D3D9; */
+  color: white;
+}
+.navbar {
+  background-color: #007bff;
+  /* color: #D2D3D9; */
+  color: white;
+}
+
+/* Various Buttons and other specialized divs */
+.button {
+  background-color: #39ceff;
+  border-radius: 10%;
+  border: none;
+  color: #f0ffff;
+}
+.text-field {
+  border: none;
+  color: black;
+  background-color: white;
+}
+
+.footer {
+  background-color: #1e1e57;
+  color: #d2d3d9;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  padding: 20px;
+}
+
+/* Color Hexes
+  Main Bold Color (Navy): #1E1E57
+  Secondary Color (Grey): #797887
+  Secondary Lighter Color (Light Grey): #D2D3D9
+  Background Color: #B5B5B5
+  Tertiary Color (Periwinkle): #4F4C85
+  */

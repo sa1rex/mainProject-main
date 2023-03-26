@@ -1,0 +1,43 @@
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0px;
+  border: 1px solid #282a35;
+  height: 60px;
+  background-color: #282a35;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  transform: translate(-16%, 0%);
+  top: 94%;
+  left: 16%;
+  width: 100%;
+}
+
+#footer p {
+  margin-top: 25px;
+  color: white;
+}
+
+#footer > div {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  text-shadow: 2px 2px #cacaca;
+}
+
+#footer > div > button > a {
+  text-decoration: none;
+  color: white;
+}
+
+body::-webkit-scrollbar {
+  width: 6px;
+  background-color: #cfcfcf;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #4c4c4c;
+  border-radius: 5px;
+}

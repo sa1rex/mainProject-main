@@ -1,0 +1,63 @@
+<% if (typeof user !=="undefined" ) { %>
+    <h1>Settings</h1>
+    <br>
+    <p>
+    <h3>General</h3>
+    <p>
+    <p>
+        <span href="#" tabindex="-1">Email: <%= user.displayName %></span>
+    <form action="/settings">
+        <input class="button my-2 my-sm-0" type="submit" value="Change Email" />
+    </form>
+    </p>
+    <p>
+        <span href="#" tabindex="-1">Password: ******* </span>
+    <form action="/settings">
+        <input class="button my-2 my-sm-0" type="submit" value="Change Password" />
+    </form>
+    </p>
+
+    <br>
+    <p>
+        <form action="/logout">
+            <input class="button my-2 my-sm-0" type="submit" value="Logout" />
+        </form>
+    </p>
+    <br>
+    <h3>Business Account</h3>
+
+    <p>
+        <span href="#" tabindex="-1">Company Account</span>
+        <br>
+        <span href="#" tabindex="-1">Position: Manager</span>
+        <br>
+    <form action="/settings">
+        <input class="button my-2 my-sm-0" type="submit" value="Contact Representative" />
+    </form>
+    </p>
+    <br>
+
+    <h3>Payment</h3>
+    <p>
+        <span href="#" tabindex="-1">Payment Method: ***** **** **** **12 </span>
+    <form action="/settings">
+        <input class="button my-2 my-sm-0" type="submit" value="Change Payment" />
+    </form>
+    </p>
+    <p>
+        <span href="#" tabindex="-1">Subscription Plan: Standard </span>
+    <form action="/settings">
+        <input class="button my-2 my-sm-0" type="submit" value="Change Plan" />
+    </form>
+    </p>
+    
+
+    <% } else { %>
+        <p>Login or create an account to get started!</p>
+        <form action="/login">
+            <input class="button my-2 my-sm-0" type="submit" value="Login" />
+        </form>
+        <% } %>
+            </p>
+
+            <link rel="stylesheet" href="/css/style.css" />

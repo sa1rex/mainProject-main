@@ -1,0 +1,48 @@
+<%- include('./partials/head.ejs') %>
+
+    <body>
+
+        <div id="navbar"></div>
+
+        <div id="trendingBtnDiv">
+            <button name="trendingBtn" value="breakfast" type="button" class="btn btn-outline-success"
+                id="BreakfastBtn">Breakfast</button>
+            <button name="trendingBtn" id="CakeBtn" value="cake" type="button"
+                class="btn btn-outline-success">Cake</button>
+            <button name="trendingBtn" id="PorkBtn" value="pork" type="button"
+                class="btn btn-outline-success">Pork</button>
+            <button name="trendingBtn" id="PieBtn" value="pie" type="button"
+                class="btn btn-outline-success">Pie</button>
+            <button name="trendingBtn" id="ChickenBtn" value="chicken" type="button"
+                class="btn btn-outline-success">Chicken</button>
+        </div>
+
+        <div>
+            <div class="flex">
+                <div id="totalFood"></div>
+                <div>
+                    <div class="dropdown">
+                        <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton2"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Sort
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="dropdownMenuButton2">
+                            <li id="sortLH" class="dropdown-item mt-2">Price: Low - High</li>
+                            <li id="sortHL" class="dropdown-item mt-2">Price: High - Low</li>
+                            <li id="ratingLH" class="dropdown-item mt-2">Rating: Low - High</li>
+                            <li id="ratingHL" class="dropdown-item mt-2">Rating: High - Low</li>
+                        </ul>
+                        <button id="reset" class="btn btn-outline-primary">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Display Dishes -->
+        <div id="display" class="container mt-5"></div>
+
+        <!-- Toast Notification div -->
+        <div id="notifyDiv"></div>
+
+
+        <%- include('./partials/footer.ejs') %>
